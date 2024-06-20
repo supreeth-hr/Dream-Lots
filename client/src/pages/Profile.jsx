@@ -59,10 +59,10 @@ export default function Profile() {
         headers:{
           'Content-Type':'application/json',
         },
-        body:JSON.stringify(formData),
+        body: JSON.stringify(formData),
       });
-      const data= res.json();
-      if(data.success == false){
+      const data= await res.json();
+      if(data.success === false){
         dispatch(updateUserFailure(data.message));
         return;
       }
@@ -136,10 +136,24 @@ export default function Profile() {
             ''
           )}
         </p>
-        <input type="text" defaultValue={currentUser.username} placeholder='username' id='username' className='border p-3 rounded-lg' onChange={handleChange} />
-        <input type="email" defaultValue={currentUser.email} placeholder='email' id='email' className='border p-3 rounded-lg' onChange={handleChange} />
-        <input type="password" placeholder='password' id='password' className='border p-3 rounded-lg' onChange={handleChange} />
-        <button className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>{loading? 'Loading...':'Update'}</button>
+        <input type="text" 
+        defaultValue={currentUser.username} placeholder='username' 
+        id='username' 
+        className='border p-3 rounded-lg' 
+        onChange={handleChange} />
+        <input type="email" 
+        defaultValue={currentUser.email} 
+        placeholder='email' 
+        id='email' 
+        className='border p-3 rounded-lg' 
+        onChange={handleChange} />
+        <input type="password" 
+        placeholder='password' 
+        id='password' 
+        className='border p-3 rounded-lg' 
+        onChange={handleChange} />
+        <button disabled={loading} 
+        className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'>{loading? 'Loading...':'Update'}</button>
       </form>
       <div className="flex justify-between mt-5">
         <span onClick={handleDeleteUser} className= 'text-red-700 cursor-pointer'>Delete account</span>
