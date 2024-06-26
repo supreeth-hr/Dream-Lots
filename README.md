@@ -1,2 +1,2 @@
-# Real-Estate-MERN-Web-App
-Real Estate Web Application using MERN Stack
+# Dream-Lots-Web-Application
+Dream Lots is a Real Estate Web Application using MERN Stack.
