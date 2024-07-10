@@ -1,6 +1,33 @@
-# Dream-Lots-Web-Application
-Dream Lots is a Real Estate Web Application using MERN Stack. It is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.
+# Dream Lots
+Dream Lots is a Real Estate Web Application using MERN Stack. It is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods.
 
-Our mission is to help our clients achieve their real estate goals by providing expert advice, personalized service, and a deep understanding of the local market. Whether you are looking to buy, sell, or rent a property, we are here to help you every step of the way.
+## Introduction
 
-Our team of agents has a wealth of experience and knowledge in the real estate industry, and we are committed to providing the highest level of service to our clients. We believe that buying or selling a property should be an exciting and rewarding experience, and we are dedicated to making that a reality for each and every one of our clients.
+Dream Lots aims to provide a platform for users to browse and list properties for rent or sale. It includes features for searching properties based on various criteria, managing property listings, and user authentication.
+
+## Features
+
+- **Property Listing**
+  - Users can list properties for rent or sale with detailed information including description, amenities, and pricing.
+- **Search**
+  - Search properties based on location, type (rent or sale), amenities (parking, furnished), and sorting options.
+- **User Authentication**
+  - Secure authentication using Firebase Authentication with Google OAuth for seamless sign-in.
+- **Image Upload**
+  - Integration with Firebase Storage for uploading property images.
+- **Responsive Design**
+  - Responsive UI for optimal viewing experience across devices.
+
+## Technologies Used
+
+- **Frontend**
+  - React.js
+  - React Router DOM
+  - Tailwind CSS
+  - Firebase Authentication
+- **Backend**
+  - Node.js
+  - Express.js
+  - MongoDB Compass
+  - Mongoose (ODM for MongoDB)
+- Deployed on Render
